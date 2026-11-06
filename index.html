@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giriraj Retreat Centre | Sri Sri Radha Madan Mohan Goshala</title>
+  <meta name="description" content="Authentic cold-pressed oils, raw honey, rose powder, and Vedic goshala products from Sri Sri Radha Madan Mohan Goshala, Medipalle, Hyderabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <span>Hare Krishna! 100% proceeds sustain cow protection at Sri Sri Radha Madan Mohan Goshala, Medipalle</span>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-badge">ISKCON ABIDS</span>
+        <span class="brand-title">Giriraj Retreat Centre</span>
+        <span class="brand-sub">Sri Sri Radha Madan Mohan Goshala</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#products">Goshala Store</a>
+        <a href="#purity">Why GRC</a>
+        <a href="#retreat">Farm &amp; Seva</a>
+        <a href="#visit">Visit Medipalle</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-trigger" id="openCartBtn" aria-label="Open shopping cart" type="button">
+          <span>Seva Basket</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Medipalle • Moinabad • Hyderabad</p>
+          <h1>From Our Goshala to Your Home</h1>
+          <p class="hero-lead">
+            Pure, natural, and divine offerings crafted in small batches at Sri Sri Radha Madan Mohan Goshala. Every jar of honey, bottle of cold-pressed oil, and Vedic essential directly supports Goseva and sustainable rural living.
+          </p>
+          <div class="hero-ctas">
+            <a href="#products" class="btn btn-primary">Shop Goshala Products</a>
+            <a href="#retreat" class="btn btn-outline">Plan a Farm Visit</a>
+          </div>
+          <div class="hero-metrics">
+            <div><strong>7+</strong><span>Goshala Offerings</span></div>
+            <div><strong>0%</strong><span>Middleman Commission</span></div>
+            <div><strong>100%</strong><span>Dedicated to Goseva</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-poster-frame">
+            <img
+              src="hero-goshala.webp"
+              alt="Giriraj Retreat Centre Goshala Products"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="img-fallback">
+              <span class="fallback-emblem">🐄</span>
+              <strong>Giriraj Retreat Centre</strong>
+              <span>Pure • Natural • Divine</span>
+              <small>Drop hero-goshala.webp into your root folder to display your farm photo</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="purity" class="pillars">
+      <div class="container pillars-grid">
+        <div class="pillar-item">
+          <span class="pillar-icon">🌿</span>
+          <div>
+            <h3>100% Natural</h3>
+            <p>Cultivated and harvested with traditional cow-based farming practices.</p>
+          </div>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-icon">🧪</span>
+          <div>
+            <h3>No Chemicals</h3>
+            <p>Cold-pressed and shade-dried without solvents, synthetic scents, or preservatives.</p>
+          </div>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-icon">💛</span>
+          <div>
+            <h3>Pure &amp; Authentic</h3>
+            <p>Prepared at our Medipalle Goshala to nourish healthier, happier homes.</p>
+          </div>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-icon">🌱</span>
+          <div>
+            <h3>Sustainable &amp; Eco-Friendly</h3>
+            <p>Supporting lifelong Gau Seva and zero-waste rural livelihoods.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section store-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Direct Goshala Storefront</p>
+            <h2>Products from Our Goshala</h2>
+          </div>
+          <div class="filter-bar" role="tablist" aria-label="Product categories">
+            <button class="filter-chip active" data-category="all" type="button">All Offerings</button>
+            <button class="filter-chip" data-category="oils-honey" type="button">Oils &amp; Honey</button>
+            <button class="filter-chip" data-category="wellness" type="button">Wellness &amp; Beauty</button>
+            <button class="filter-chip" data-category="ritual-eco" type="button">Ritual &amp; Eco</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section id="retreat" class="section retreat-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Beyond the Storefront</p>
+            <h2>Experience Giriraj Retreat Centre</h2>
+          </div>
+          <a
+            href="https://wa.me/919573473564?text=Hare%20Krishna!%20I%20would%20like%20to%20enquire%20about%20visiting%20Giriraj%20Retreat%20Centre%20and%20Gau%20Seva%20opportunities."
+            target="_blank"
+            rel="noopener"
+            class="btn btn-outline"
+          >Book Group Visit / Gau Seva</a>
+        </div>
+        <div class="retreat-grid" id="retreatGrid"></div>
+      </div>
+    </section>
+
+    <section id="visit" class="section visit-section">
+      <div class="container visit-grid">
+        <div class="visit-info">
+          <p class="eyebrow">Connect &amp; Fulfilment</p>
+          <h2>Visit Our Medipalle Sanctuary</h2>
+          <p>Located along the peaceful Chilkur Balaji – Moinabad corridor, Sri Sri Radha Madan Mohan Goshala welcomes families, students, and devotees daily.</p>
+          <ul class="contact-list">
+            <li><strong>Campus Address:</strong> Medipalle, Moinabad, Hyderabad, Telangana</li>
+            <li><strong>Orders &amp; Details:</strong> <a href="tel:+919573473564">+91 95734 73564</a></li>
+            <li><strong>Goshala Partnerships:</strong> <a href="tel:+917013367474">+91 70133 67474</a></li>
+            <li><strong>Fulfilment Options:</strong> Doorstep courier across Hyderabad &amp; India, or weekend pickup via ISKCON Abids</li>
+          </ul>
+        </div>
+        <div class="map-frame">
+          <iframe
+            title="Giriraj Retreat Centre Medipalle Location"
+            src="https://www.google.com/maps?q=Medipalle,Moinabad,Hyderabad,Telangana&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Giriraj Retreat Centre — Sri Sri Radha Madan Mohan Goshala (ISKCON Abids).</p>
+      <p>Support Goseva • Support a Sustainable Future</p>
+    </div>
+  </footer>
+
+  <!-- Quick View Modal -->
+  <div class="modal-backdrop" id="productModal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-close" id="closeModalBtn" aria-label="Close details" type="button">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Slide-out Cart & Direct UPI/WhatsApp Checkout -->
+  <div class="drawer-backdrop" id="cartBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+    <div class="drawer-head">
+      <h3>Your Goseva Basket</h3>
+      <button class="icon-close" id="closeCartBtn" aria-label="Close basket" type="button">✕</button>
+    </div>
+    <div class="drawer-items" id="cartItems"></div>
+    <div class="drawer-foot" id="cartFooter">
+      <div class="subtotal-row">
+        <span>Estimated Contribution</span>
+        <strong id="cartSubtotal">₹0</strong>
+      </div>
+      <form id="checkoutForm" class="checkout-form">
+        <input type="text" id="custName" placeholder="Your Full Name" required />
+        <input type="tel" id="custPhone" placeholder="Mobile Number" required />
+        <select id="deliveryMode">
+          <option value="Home Courier Delivery">Home Courier Delivery (Shipping actuals)</option>
+          <option value="ISKCON Abids Pickup">Weekend Pickup — ISKCON Abids</option>
+          <option value="GRC Medipalle Farm Pickup">Direct Pickup — GRC Medipalle</option>
+        </select>
+        <textarea id="custAddress" rows="2" placeholder="Delivery Address &amp; Pincode (if courier)"></textarea>
+        <div class="upi-box">
+          <p class="upi-note">Pay zero-commission via UPI after confirming stock on WhatsApp, or scan GRC's official QR:</p>
+          <img
+            src="grc-upi-qr.webp"
+            alt="Scan to Pay UPI QR"
+            class="qr-preview"
+            onerror="this.style.display='none';"
+          />
+          <a id="upiPayLink" href="#" class="btn btn-upi">Pay via UPI App</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Order on WhatsApp</button>
+      </form>
+    </div>
+  </aside>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
